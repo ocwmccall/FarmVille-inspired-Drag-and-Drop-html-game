@@ -1,0 +1,253 @@
+@font-face {
+    font-family: 'StardewValley';
+    src: url('images/Stardew_Valley.ttf') format('truetype');
+}
+
+.container-xxl {
+    
+    justify-content: center;
+}
+
+body {
+        height: 100vh;
+        width: 100vw;
+        background-image: url('images/pxfuel.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+
+#main_box {
+    padding: 0px;
+}
+
+
+/*Seeds targeting*/
+#info_box + .row {
+    min-height: 10vh;
+    justify-content: center;
+}
+
+
+.container-xxl div[id^="info"] {
+    height: 15vh;
+    background-image: url('images/stardew_text_box2\(1\).jpg');
+    background-size: 98% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#info_box .col {
+    padding-left:5%;
+    padding-right:5%;
+    max-height: 14.5vh;
+
+}
+
+.display-6 {
+    font-family: 'StardewValley';
+    max-height: 14.5vh;
+}
+
+
+#info_box + .row .col-1 {
+    background-image: url('images/stardew_hotbar\(1\).png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    min-width: 15vw;
+    max-height:10vh;
+    text-align: center;
+    justify-content: center;
+
+
+    position:relative;
+}
+
+/* Non draggable images*/
+#info_box + .row .col-1 img:first-child{
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    z-index: 0;
+}
+
+/* Seed and hoe images */
+#Seeds .col-1 img + img {
+    position:absolute;
+
+    z-index: 10;
+    width: 80%;
+    height: 80%;
+}
+
+#info_box + .row .col-4:first-child {
+    max-width: 20vw;
+    max-height:10vh;
+}
+
+#info_box + .row .col-4:last-child {
+    max-width: 20vw;
+    max-height:10vh;
+}
+
+#farm {
+    min-height: 60vh;
+    border-radius: 25px;
+    background-image: url(images/stardew_field.PNG);
+    width: 100%;
+}
+
+#info_box + .row + div .row {
+    justify-content: center;
+}
+
+ /* farm plots */
+#info_box + .row + div .row .col-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+#farm .col-3 {
+    max-width: 0vw;
+}
+
+
+
+#progress_box {
+    min-height: 10vh;
+
+}
+
+#progress_box .col {
+    position: relative;
+    display:flex;
+    justify-content: center;
+    height:10vh;
+
+}
+  
+.progress-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 3vh;
+    min-height: 10vh;
+    width: 90%;
+    
+    background-image: url('images/stardew_text_box2\(1\).jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.progress {
+    visibility: hidden ;
+    height: 3vh;
+    border-radius: 20px;
+    width: 85%;
+    min-width: 85%;
+    
+}
+
+.progress .progress-bar{
+    visibility: hidden ;
+}
+
+
+
+
+
+
+@media only screen and (max-width:768px){
+    #info_box {
+        min-height: 20vh;
+    }
+    #info_box + .row .col-1 {
+        min-width: 15vw;
+        max-height:10vh;
+        
+    }
+    #info_box + .row .col-4:first-child {
+        max-width: 17.5vw;
+        max-height:10vh;
+    }
+    #info_box + .row .col-4:last-child {
+        max-width: 17.5vw;
+        max-height:10vh;
+    }
+    
+    div[id^="plot"] {
+        width: 15vw;
+        height: 10vh;
+    }
+
+
+
+}
+@media only screen and (min-width: 768px) and (max-width: 1400px){
+
+    #info_box {
+        max-width: 1320px;
+        margin: 0 auto;
+    }
+
+    /* targeting farm*/
+    .row.d-flex + div{
+        max-width: 1320px;
+        margin: 0 auto;
+    }
+
+    #info_box + .row .col-1 {
+        min-width: 10vw;
+        max-width: 10vw;
+        height:10vh;
+        
+    }
+    #info_box + .row .col-4:first-child {
+        width: 0vw;
+        max-height:10vh;
+    }
+
+    #info_box + .row .col-4:last-child {
+        width: 0vw;
+        max-height:10vh;
+    }
+
+    div[id^="plot"] {
+        width: 15vw;
+        height: 10vh;
+    }
+    
+}
+@media only screen and (min-width: 1400px){
+    .container-xxl{
+        width: 1400px;
+    }
+    
+    
+       
+    #info_box + .row .col-1 {
+        min-width: 10vw;
+        max-width: 140px;
+        max-height:100px;
+        
+    }
+    #info_box + .row .col-4:first-child {
+        max-width: 5vw;
+        max-height:10vh;
+    }
+    #info_box + .row .col-4:last-child {
+        max-width: 5vw;
+        max-height:10vh;
+    }
+    #farm .row {
+        min-height:10vh;
+    }
+    div[id^="plot"] {
+        width: 216px;
+        height: 10vh;
+    }
+    
+}
